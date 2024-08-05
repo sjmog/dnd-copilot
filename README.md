@@ -2,54 +2,27 @@
 
 A copilot for DMs. Get out of the handbooks and back to the table.
 
-The principle is: this thing will listen to your game and surface relevant, just-in-time information and hints.
+> This thing will listen to your game and surface relevant, just-in-time information and hints.
 
-## Issue Reporting
-
-If you have found a bug or if you have a feature request, please report them at this repository issues section. Please do not report security vulnerabilities on the public GitHub issue tracker.
-
-## Demo features
+### Features
 
 - Capture streaming audio using [Deepgram Streaming Speech to Text](https://developers.deepgram.com/docs/getting-started-with-live-streaming-audio).
-= Display mentoined spells from the [Open5e project](https://open5e.com/).
+- Display mentioned spells from the [Open5e project](https://open5e.com/).
 
-## Quickstart
-
-### Manual
+## Getting started
 
 Follow these steps to get started with this starter application.
 
-#### Clone the repository
+1. [Clone this repository](https://github.com/sjmog/dnd-copilot)
+2. Install dependencies with `npm install`.
+3. Copy `sample.env.local` to `.env.local` and add a `DEEPGRAM_API_KEY` from the [Deepgram console](https://console.deepgram.com/). (Key requires admin privileges.)
+4. Run the application with `npm run dev` and [visit it](http://localhost:3000).
 
-Go to GitHub and [clone the repository](https://github.com/sjmog/dnd-copilot).
+### Issue Reporting
 
-#### Install dependencies
+If you have found a bug or if you have a feature request, please report them at this repository issues section. Please do not report security vulnerabilities on the public GitHub issue tracker.
 
-Install the project dependencies.
+### Authors
 
-```bash
-npm install
-```
-
-#### Edit the config file
-
-Copy the code from `sample.env.local` and create a new file called `.env.local`.
-
-```bash
-DEEPGRAM_API_KEY=YOUR-DG-API-KEY
-```
-
-For `DEEPGRAM_API_KEY` paste a key from the [Deepgram console](https://console.deepgram.com/). It currently needs admin privileges.
-
-#### Run the application
-
-Once running, you can [access the application in your browser](http://localhost:3000).
-
-```bash
-npm run dev
-```
-
-## Author
-
-[Deepgram](https://deepgram.com)
-[Sam Morgan](https://github.com/sjmog)
+- [Deepgram](https://deepgram.com)
+- [Sam Morgan](https://github.com/sjmog)
