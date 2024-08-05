@@ -23,9 +23,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://aura-tts-demo.deepgram.com"),
-  title: "Deepgram AI Agent",
-  description: `Deepgram's AI Agent Demo shows just how fast Speech-to-Text and Text-to-Speech can be.`,
+  metadataBase: new URL("https://dmcopilot.com"),
+  title: "DM Copilot",
+  description: `Spend less time in the handbooks and more time at the table.`,
   robots: {
     index: false,
     follow: false,
@@ -39,6 +39,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-dvh">
+      <head>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700" rel="stylesheet" type="text/css"/>
+      </head>
       <body
         className={`h-full dark ${classNames(
           favorit.variable,
